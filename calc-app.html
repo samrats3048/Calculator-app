@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- outter container -->
+    <div class="calculator">
+      <!-- text box to display -->
+      <input type="text" id="display" readonly>
+      <!-- creating buttons for numbers, clear and operators -->
+      <div class="buttons">
+        <button onclick="addnumber('1')">1</button>
+        <button onclick="addnumber('2')">2</button>
+        <button onclick="addnumber('3')">3</button>
+        <button onclick="addoperator('+')">+</button>
+
+        <button onclick="addnumber('4')">4</button>
+        <button onclick="addnumber('5')">5</button>
+        <button onclick="addnumber('6')">6</button>
+        <button onclick="addoperator('-')">-</button>
+
+        <button onclick="addnumber('7')">7</button>
+        <button onclick="addnumber('8')">8</button>
+        <button onclick="addnumber('9')">9</button>
+        <button onclick="addoperator('*')">*</button>
+
+        <button onclick="addnumber('0')">0</button>
+        <button onclick="clrdisplay() ">clr</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="addoperator('/')">/</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
